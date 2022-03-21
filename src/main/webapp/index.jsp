@@ -9,5 +9,16 @@
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
+
+${requestScope.msg}
+<br><br>
+
+
+<c:forEach items="${applicationScope.konti}" var="item">
+
+    ${item.value.navn} : ${item.value.saldo}
+    <br>
+</c:forEach>
+
 </body>
 </html>
